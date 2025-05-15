@@ -27,6 +27,5 @@ public class Project extends BaseEntity {
     private Date startDate;
     private Date endDate;
     private ProjectStatus projectStatus;
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Planning planning;
+    private Long planId;
 }
