@@ -13,13 +13,13 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "tbl_BudgetRequest")
-public class BudgetRequest {
+public class BudgetRequest extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long budgetRequestId;
-    private Double requestAmount;
+    private double requestAmount;
     private Date requestDate;
-    private Double approvalBudget;
+    private double approvalBudget;
     private Date approvalBudgetDate;
     private BudgetApproveStatus budgetApproveStatus;
     private String approvalBy;

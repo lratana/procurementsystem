@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -22,11 +24,15 @@ public class User extends BaseEntity{
     private String lastname;
     @Column(name = "gender",length = 10)
     private String gender;
-    private Date birthdate;
+    @Temporal(TemporalType.DATE)
+    private Date dateOfBirth;
     private String email;
+    @Column(name = "phone_number",length = 15,nullable = false)
     private String phoneNumber;
     private String address;
     @Column(name = "user_type")
     private UserType userType;
     private String status;
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    private List<Device> device;
 }

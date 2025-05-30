@@ -24,7 +24,7 @@ public class Planning extends BaseEntity {
     private Date procurementPlanContract;
     private String procurementPlanApproveBy;
     private ProjectMethod procurementPlanMethod;
-    private Double procurementBudgetPlan;
+    private double procurementBudgetPlan;
     private String remark;
     private Long projectId;
     private Long fiscalYearId;
