@@ -12,13 +12,13 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "tbl_Bid")
-public class Bid {
+public class Bid extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bidId;
     private Date announcementDate;
     private Date openingDate;
-    private Double bidAmount;
+    private double bidAmount;
     private BidStatus bidStatus;
     private Date bidSubmissionDate;
     private Long projectId;

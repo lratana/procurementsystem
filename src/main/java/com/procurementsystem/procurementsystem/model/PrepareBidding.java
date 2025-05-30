@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "tbl_PrepareBidding")
-public class PrepareBidding {
+public class PrepareBidding extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long prepareBiddingId;

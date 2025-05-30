@@ -11,7 +11,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "tbl_device")
-public class Device {
+public class Device extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -22,7 +22,7 @@ public class Project extends BaseEntity {
     private String projectDescription;
     private ProjectType projectType;
     private ProjectMethod projectMethod;
-    private Double budgetEstimate;
+    private double budgetEstimate;
     private String fundingSource;
     private Date startDate;
     private Date endDate;
